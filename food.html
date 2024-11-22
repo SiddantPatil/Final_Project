@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delicious Foods</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+.hero {
+    background: url('https://png.pngtree.com/background/20230519/original/pngtree-an-old-coffee-shop-with-very-dark-walls-picture-image_2652909.jpg') no-repeat center center/cover;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-text h1 {
+    font-size: 48px;
+    color: white;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+.popular-dishes {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.popular-dishes h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.dish-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dish {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.dish h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dish p {
+    font-size: 16px;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer .footer-content p {
+    font-size: 14px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+footer .social-links a:hover {
+    color: #ff6347;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">BCA Wala Cafe</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./food.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Delicious Foods</h1>
+            <p>Your favorite place for tasty treats.</p>
+            <p></p>
+            <a href="./order.html" class="cta-button">Order Now</a>
+        </div>
+    </section>
+    <section class="popular-dishes">
+        <h2>Popular Dishes</h2>
+        <div class="dish-container">
+            <div class="dish">
+                <img src="https://imgmedia.lbb.in/media/2023/02/63e39a8dc9ae884e143db091_1675860621236.jpg" alt="Dish 1">
+                <a href="https://www.pizzahut.co.in/"></a>
+                <h3>Pizza</h3>
+                <p>Freshly baked pizza with your favorite toppings.</p>
+            </div>
+            <div class="dish">
+                <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg" alt="Dish 2">
+                <a href="https://www.zomato.com/"></a>
+                <h3>Burger</h3>
+                <p>Juicy and delicious, made with the finest ingredients.</p>
+            </div>
+            <div class="dish">
+                <img src="https://assets.epicurious.com/photos/5988e3458e3ab375fe3c0caf/1:1/w_3607,h_3607,c_limit/How-to-Make-Chicken-Alfredo-Pasta-hero-02082017.jpg" alt="Dish 3">
+                <a href="https://www.dominos.co.in/menu/pasta"></a>
+                <h3>Pasta</h3>
+                <p>Delicious pasta with a variety of sauces to choose from.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; All Rights Reserved</p>
+            <div class="social-links">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
